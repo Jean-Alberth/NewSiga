@@ -1,0 +1,68 @@
+/* Todas as alterações são limitadas à classe ns-active; desativar restaura o SIGA. */
+#ns-panel {position:fixed;inset:0 auto 0 0;width:224px;padding:30px 18px;box-sizing:border-box;background:#fff;border-right:1px solid #e8edf4;z-index:1000;display:flex;flex-direction:column;font:14px/1.5 'Segoe UI',Arial,sans-serif;color:#243247}
+#ns-panel[hidden] {display:none!important}
+#ns-panel .ns-brand {font-size:32px;font-weight:750;letter-spacing:-1.5px;padding:0 14px 32px}
+#ns-panel small {display:block;font-size:9px;letter-spacing:1px;color:#8a97a9;margin-top:3px}
+#ns-panel nav {display:grid;gap:7px}
+#ns-panel button {font:inherit;cursor:pointer;border:0;border-radius:9px;text-align:left;background:transparent;color:#607086;padding:12px 14px}
+#ns-panel nav button span {display:inline-block;width:26px;font-size:18px;color:#7d8da4}
+#ns-panel button:hover {background:#f2f6fc;color:#2563eb}
+#ns-panel button.ns-selected {background:#edf4ff;color:#2563eb;font-weight:600}
+#ns-panel button:focus-visible {outline:3px solid #93b7ff;outline-offset:2px}
+#ns-panel button:disabled {opacity:.4;cursor:default}
+#ns-panel .ns-status {font-size:12px;color:#68778c;padding:8px 12px}
+#ns-panel .ns-user {margin-top:auto;background:#f7f9fc;padding:14px;border-radius:10px;font-weight:600}
+#ns-panel .ns-toggle {font-size:12px;margin-top:10px;text-align:center;border:1px solid #e4eaf2}
+#ns-panel.ns-original {inset:auto 16px 16px auto;width:auto;padding:6px;border:1px solid #e4eaf2;border-radius:12px;box-shadow:0 5px 20px #1f29371a}
+#ns-panel.ns-original>*:not(.ns-toggle) {display:none}
+#ns-panel.ns-original .ns-toggle {margin:0}
+body.ns-active {background:#f6f8fc!important;color:#243247!important;font-family:'Segoe UI',Arial,sans-serif!important;padding:0 0 40px 224px!important}
+body.ns-active #MAINTABLE {width:100%!important;max-width:1400px!important;margin:auto!important;padding:22px 36px!important}
+body.ns-active .uc_apptopbar {position:static!important;background:transparent!important;color:#243247!important;border-bottom:1px solid #e4eaf2!important;box-shadow:none!important;margin-bottom:24px!important}
+body.ns-active .uc_apptopbar-content {display:flex!important;align-items:center;justify-content:space-between;padding:8px 0 20px!important;height:auto!important;min-height:52px}
+body.ns-active .uc_apptopbar-title {font-size:18px;font-weight:650;color:#243247!important}
+body.ns-active .uc_apptopbar-title img {display:none}
+body.ns-active .uc_apptopbar-user {color:#53647b!important;display:flex;align-items:center;gap:14px}
+body.ns-active .uc_appuser-avatar {width:36px!important;height:36px!important;border-radius:50%;object-fit:cover}
+body.ns-active .uc_appfooter {display:none!important}
+body.ns-active .uc_appheader-bar {display:flex;justify-content:space-between;align-items:center;background:transparent!important;color:#243247!important;padding:0 0 24px!important}
+body.ns-active .uc_appheader-title {font-size:25px!important;font-weight:700;color:#243247!important;text-align:right}
+body.ns-active .uc_appheader-subtitle {font-size:13px!important;font-weight:400;color:#8491a3!important}
+body.ns-active .uc_appbtvoltar {background:#fff;border:1px solid #e6ebf2;border-radius:8px;padding:9px 14px;color:#2563eb!important;font-size:13px}
+body.ns-active .uc_appcard-container,body.ns-active .uc_appcardsimples-container {display:grid!important;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px!important;width:100%!important;padding:0!important}
+body.ns-active .uc_appcard,body.ns-active .uc_appcardsimples {background:#fff!important;border:1px solid #edf0f6!important;border-radius:13px!important;box-shadow:0 3px 14px #20365304!important;width:auto!important;margin:0!important;min-width:0!important;overflow:hidden}
+body.ns-active .uc_appcard-titlecontainer {background:#fff!important;color:#8190a5!important;padding:23px!important;font-size:12px!important;line-height:1.9;min-height:130px}
+body.ns-active .uc_appcard-title {display:inline-block;color:#243247!important;font-size:17px!important;font-weight:650;line-height:1.5;margin:6px 0}
+body.ns-active .uc_appcard.uc_pointer:hover,body.ns-active .uc_appcardsf.uc_pointer:hover {border-color:#bad1fa!important;box-shadow:0 6px 22px #2563eb0b!important}
+body.ns-active .uc_appcard-content {padding:4px 22px 22px!important;background:#fff!important;color:#53647b!important}
+body.ns-active .uc_appcardsimples {padding:20px!important;color:#64748b!important}
+body.ns-active .uc_appcardsimples-title {background:#edf4ff!important;color:#2563eb!important;border-radius:8px;font-size:27px!important;font-weight:700;margin:0 0 18px!important;padding:12px}
+body.ns-active .uc_applabel {color:#7a899d!important;font-size:13px}
+body.ns-active .uc_apptext {color:#243247!important;font-weight:600}
+body.ns-active .uc_appborder-bottom {border-color:#eef2f7!important;padding:8px 0}
+body.ns-active .uc_appcardlarge {background:#fff!important;color:#243247!important;border-radius:12px;padding:24px!important;margin-bottom:20px!important}
+body.ns-active .uc_appcardsfc {width:100%!important;max-width:none!important;gap:12px}
+body.ns-active .uc_appcardsf {background:#fff!important;color:#526178!important;border:1px solid #e9edf4!important;border-radius:11px!important;padding:20px!important;margin:0 0 12px!important;width:100%!important;box-sizing:border-box;line-height:1.7}
+body.ns-active .uc_apptext-bold {font-weight:650;color:#243247!important}
+body.ns-active .uc_appgrid-menu {display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px!important;margin-bottom:24px}
+body.ns-active .uc_appgrid-item {width:auto!important;background:#fff!important;color:#526178!important;border:1px solid #e9edf4;border-radius:10px;padding:18px!important}
+body.ns-active .uc_appgrid-icon {color:#2563eb!important}
+body.ns-active .ep-wrap {max-width:none!important;width:100%!important;margin:0!important}
+body.ns-active .ep-stack {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+body.ns-active .ep-acc {background:#fff!important;border:1px solid #e9edf4!important;border-radius:12px!important;margin:0!important}
+body.ns-active .ep-acc-sum {padding:20px!important;cursor:pointer}
+body.ns-active .ep-acc-ico,body.ns-active .ep-i {color:#2563eb!important;background:#edf4ff!important}
+body.ns-active .ep-acc-title {color:#243247!important;font-size:16px!important}
+body.ns-active .ep-grid {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16px}
+body.ns-active .ep-item {background:#f7f9fc!important;border-radius:9px;padding:15px!important;text-align:center;color:#53647b!important;cursor:pointer}
+body.ns-active .ep-item:hover {background:#edf4ff!important}
+body.ns-active .ep-profile {background:#fff!important;border:1px solid #e9edf4!important;border-radius:12px!important;padding:24px!important;margin-top:20px!important}
+body.ns-active .uc_appsection {background:#fff;border:1px solid #e9edf4;border-radius:12px;padding:24px}
+body.ns-active .uc_appsection-title {font-size:18px!important;font-weight:650}
+body.ns-active .uc_appsection-description {color:#8190a5;font-size:13px;font-weight:400}
+body.ns-active .uc_appcard-container:empty::after {content:'Nenhuma avaliação disponível nesta tela.';color:#8190a5;font-size:14px;padding:16px 0}
+body.ns-active table {width:100%;background:#fff;border-collapse:collapse}
+body.ns-active td,body.ns-active th {padding:12px;border-color:#e9edf4!important}
+@media(max-width:1000px) {body.ns-active #MAINTABLE {padding:20px!important}body.ns-active .ep-stack {grid-template-columns:1fr}}
+@media(max-width:700px) {#ns-panel {width:170px;padding:18px 10px}#ns-panel .ns-brand {font-size:26px;padding:0 8px 20px}#ns-panel button {padding:9px 7px;font-size:12px}body.ns-active {padding-left:170px!important}body.ns-active #MAINTABLE {padding:12px!important}body.ns-active .uc_appcard-container,body.ns-active .uc_appcardsimples-container {grid-template-columns:1fr}body.ns-active .uc_appgrid-menu,body.ns-active .ep-grid {grid-template-columns:repeat(2,minmax(0,1fr))}body.ns-active .uc_appheader-title {font-size:19px!important}}
+@media print {#ns-panel {display:none!important}body.ns-active {padding:0!important}}

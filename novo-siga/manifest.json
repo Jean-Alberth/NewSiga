@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Novo SIGA — Fatec",
+  "version": "0.1.0",
+  "description": "Interface acadêmica personalizada. Mantém os dados e as ações do portal oficial.",
+  "content_scripts": [{
+    "matches": ["https://siga.cps.sp.gov.br/sigaaluno/app.aspx*"],
+    "css": ["skin.css"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
